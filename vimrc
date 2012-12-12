@@ -1,4 +1,5 @@
 " load pathogen
+set nocp
 runtime bundle/core/pathogen/autoload/pathogen.vim
 call pathogen#infect('~/.dotfiles/vim/bundle/tools')
 call pathogen#infect('~/.dotfiles/vim/bundle/langs')
@@ -9,7 +10,7 @@ filetype plugin indent on
 set nocompatible
 set number
 set ruler
-syntax enable
+syntax on
 set encoding=utf-8
 set laststatus=2 " always show the status bar
 set backspace=start,eol,indent
@@ -60,7 +61,7 @@ nnoremap <leader><space> :noh<cr>
 set linebreak
 
 " colorscheme
-set background=light
+set background=dark
 colorscheme solarized
 
 " make cursor move by visual lines instead of file lines (when wrapping)
